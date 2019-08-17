@@ -1,14 +1,16 @@
-<ion-header>
+<!-- <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Shield Stopwatch app
     </ion-title>
   </ion-navbar>
-</ion-header>
+</ion-header> -->
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <controls
+   [counterTime]="currentTime"
+   [isPlaying]="isPlaying"
+   (playToggled)="togglePlay()"
+   (timeAdded)="addRecord($event)"
+  ></controls>
 </ion-content>

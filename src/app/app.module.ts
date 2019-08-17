@@ -6,11 +6,15 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { Controls } from '../pages/home/controls/controls';
+import { TimerPipe } from '../pipes/timeTransform';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    Controls,
+    TimerPipe
   ],
   imports: [
     BrowserModule,
@@ -19,12 +23,14 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    Controls
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    TimerPipe
   ]
 })
 export class AppModule {}
