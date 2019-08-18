@@ -1,0 +1,7 @@
+<div class="clock">
+  <h1 class="digitsPlaceholder">88 88 88</h1>
+  <h1 class="counter">{{counterTime | timerTransform}}
+      <span class="delimiter dots" [ngClass]="{'blinkDigit': isPlaying}">:</span>
+      <span class="delimiter dot" [ngClass]="{'blinkDigit': isPlaying}">.</span>
+  </h1>
+</div>

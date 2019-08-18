@@ -1,17 +1,13 @@
 <div class="controlsButtons">
-  <button ion-button icon-start (click)="togglePlay()">
-    <ion-icon name="home"></ion-icon>
+  <button class="playBtn" ion-button icon-start (click)="togglePlay()">
+    <fa-icon *ngIf="!isPlaying" [icon]="faPlay"></fa-icon>
+    <fa-icon *ngIf="isPlaying" [icon]="faPause"></fa-icon>
     {{isPlaying ? 'Pause': 'Play'}}
   </button>
-  
   <button ion-button icon-end (click)="takeTime()">
-    Add record
-    <ion-icon name="home"></ion-icon>
+    <fa-icon [icon]="faStopWatch"></fa-icon>
   </button>
-  
-  <button ion-button icon-only>
-    <ion-icon name="home"></ion-icon>
+  <button ion-button icon-only (click)="deleteAll()">
+    <fa-icon [icon]="faTrash"></fa-icon>
   </button>
-
-  <h1>{{counterTime | timerTransform}}</h1>
 </div>

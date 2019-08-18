@@ -1,3 +1,25 @@
 page-home {
+    .recordTime {
+        color: rgb(255,255,255);
+        font-family: $digitsFont;
+        line-height: 35px;
+    }
+    .list-md {
+        margin-top: 35px;
+    }
+    .content-md, .item-md {
+        background-color: $backgroundColor;
+        padding: 0;
 
+        .item-inner {
+            padding: 0 !important;
+        }
+        .label-md {
+            margin: 0;
+        }
+        .removeBtn {
+            float: right;
+            background-color: rgb(237, 21, 21);
+        }
+    }
 }

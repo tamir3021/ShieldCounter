@@ -15,6 +15,15 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 
+@font-face {
+    font-family: 'digital-7';
+    src: url('../assets/fonts/digital-7.ttf');
+}
+    
+
 html, body {
     max-width: 640px;
 }
+
+$backgroundColor: rgb(55, 61, 54);
+$digitsFont: 'digital-7', sans-serif;

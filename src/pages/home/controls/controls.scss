@@ -1,3 +1,21 @@
 page-home {
+    .controlsButtons {
+        display: flex;
+        flex-grow: row wrap;
 
+        button {
+            background-color: rgb(250, 247, 247);
+            color: rgb(0, 0, 0);
+            margin: 0;
+            min-width: 5em !important;
+        }
+
+        .playBtn {
+            flex-grow: 2;
+
+            fa-icon {
+                margin-right: 10px;
+            }
+        }
+    }
 }
